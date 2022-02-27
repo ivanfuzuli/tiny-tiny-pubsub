@@ -4,6 +4,8 @@ It's a very tiny library for pubsub operations.
 
 ## Usage
 
+### Install package
+
 ```
 # NPM
 npm install tiny-tiny-pubsub
