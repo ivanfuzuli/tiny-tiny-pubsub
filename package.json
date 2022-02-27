@@ -17,6 +17,11 @@
     "type": "git",
     "url": "https://github.com/ivanfuzuli/tiny-tiny-pubsub.git"
   },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
   "keywords": [
     "event",
     "pubsub",
