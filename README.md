@@ -5,7 +5,7 @@
 
 ## What is the purpose?
 
-It's a very tiny library for pubsub operations. There's no dependency. It's only 933(gziped: 437) byte.
+It's a very tiny library for **publish/subscribe(pubsub)** operations. There's **no dependency**. It's **only** 933(gziped: 437) byte. Written in **TypeScript**
 
 ## Tests Coverage
 
@@ -15,7 +15,7 @@ It's a very tiny library for pubsub operations. There's no dependency. It's only
 
 ### Install package
 
-```
+```javascript
 # NPM
 npm install tiny-tiny-pubsub
 
@@ -25,34 +25,34 @@ yarn add tiny-tiny-pubsub
 
 ### Register a function
 
-```
-  import pubsub from 'tiny-tiny-pubsub';
-  pubsub.on("test", (data) => {
-    console.log('called with ' + data)
-  })
+```javascript
+import pubsub from 'tiny-tiny-pubsub';
+pubsub.on('test', (data) => {
+  console.log('called with ' + data);
+});
 ```
 
 ### Unregister a function
 
-```
-  import pubsub from 'tiny-tiny-pubsub';
-  pubsub.off("test", fn);
+```javascript
+import pubsub from 'tiny-tiny-pubsub';
+pubsub.off('test', fn);
 ```
 
 ### Trigger
 
-```
-  import pubsub from 'tiny-tiny-pubsub';
-  pubsub.trigger("test", "sample data");
+```javascript
+import pubsub from 'tiny-tiny-pubsub';
+pubsub.trigger('test', 'sample data');
 ```
 
 ### Clean
 
 It cleans all event listeners.
 
-```
-  import pubsub from 'tiny-tiny-pubsub';
-  pubsub.clean();
+```javascript
+import pubsub from 'tiny-tiny-pubsub';
+pubsub.clean();
 ```
 
 ### Licence
