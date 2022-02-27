@@ -1,5 +1,6 @@
 ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/ivanfuzuli/tiny-tiny-pubsub/Release/main)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/tiny-tiny-pubsub)
+![npm](https://img.shields.io/npm/v/tiny-tiny-pubsub)
 ![GitHub last commit](https://img.shields.io/github/last-commit/ivanfuzuli/tiny-tiny-pubsub)
 
 ## What is the purpose?
