@@ -16,7 +16,7 @@ class PubSub implements PubSubInterface {
 
   off(name: string, fn: Fn) {
     if (this.listeners[name]) {
-      for (var i = 0; i < this.listeners[name].length; i++) {
+      for (let i = 0; i < this.listeners[name].length; i++) {
         if (this.listeners[name][i] === fn) {
           this.listeners[name].splice(i, 1);
           break;
@@ -27,7 +27,7 @@ class PubSub implements PubSubInterface {
 
   trigger(name: string, data?: any) {
     if (this.listeners[name]) {
-      this.listeners[name].forEach(function (fn: (data: any) => void) {
+      this.listeners[name].forEach((fn: (data: any) => void) => {
         fn(data);
       });
     }

@@ -5,7 +5,8 @@
   "main": "lib/pubsub.js",
   "types": "lib/pubsub.d.ts",
   "scripts": {
-    "test": "jest --watch --config jestconfig.json",
+    "test": "jest --config jestconfig.json",
+    "test:ci": "npm run test --ci",
     "test:watch": "npm run test --watch",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
