@@ -1,4 +1,4 @@
-import pubSub from './pubsub';
+import pubSub from '../src/pubsub';
 
 describe('pubSub', () => {
   afterEach(() => {
