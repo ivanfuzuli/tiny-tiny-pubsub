@@ -46,6 +46,22 @@ yarn add tiny-tiny-pubsub
   pubsub.trigger("test", "sample data");
 ```
 
+### Trigger
+
+```
+  import pubsub from 'tiny-tiny-pubsub';
+  pubsub.trigger("test", "sample data");
+```
+
+### Clean
+
+It cleans all event listeners.
+
+```
+  import pubsub from 'tiny-tiny-pubsub';
+  pubsub.clean();
+```
+
 ### Licence
 
 MIT
