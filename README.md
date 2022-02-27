@@ -4,6 +4,14 @@ It's a very tiny library for pubsub operations.
 
 ## Usage
 
+```
+# NPM
+npm install tiny-tiny-pubsub
+
+# Yarn
+yarn add tiny-tiny-pubsub
+```
+
 ### Register a function
 
 ```
