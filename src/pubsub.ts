@@ -3,6 +3,7 @@ interface PubSubInterface {
   on(name: string, fn: Fn): void;
   off(name: string, fn: Fn): void;
   trigger(name: string, data: any): void;
+  clean(): void;
 }
 
 class PubSub implements PubSubInterface {
@@ -24,7 +25,7 @@ class PubSub implements PubSubInterface {
     }
   }
 
-  trigger(name: string, data: any) {
+  trigger(name: string, data?: any) {
     if (this.listeners[name]) {
       this.listeners[name].forEach(function (fn: (data: any) => void) {
         fn(data);
@@ -32,7 +33,7 @@ class PubSub implements PubSubInterface {
     }
   }
 
-  _clean() {
+  clean() {
     this.listeners = {};
   }
 

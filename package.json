@@ -2,7 +2,8 @@
   "name": "tiny-tiny-pubsub",
   "version": "1.0.0",
   "description": "A tiny pubsub event managment system.",
-  "main": "index.js",
+  "main": "lib/pubsub.js",
+  "types": "lib/pubsub.d.ts",
   "scripts": {
     "test": "jest --watch --config jestconfig.json",
     "test:watch": "npm run test --watch",
