@@ -6,7 +6,7 @@
 
 ## What is the purpose?
 
-It's a very tiny library for **publish/subscribe(pubsub)** operations. There's **no dependency**. It's **only** 933(gziped: 437) byte. Written in **TypeScript**
+It's a very tiny library for **publish/subscribe(pubsub)** operations. There's **no dependency**. It's **only** 933(gziped: 437) byte. Written in **TypeScript**.
 
 ## Tests Coverage
 
