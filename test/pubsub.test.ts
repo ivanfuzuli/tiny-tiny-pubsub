@@ -2,7 +2,7 @@ import pubSub from '../src/pubsub';
 
 describe('pubSub', () => {
   afterEach(() => {
-    pubSub.clean();
+    pubSub.clear();
   });
   test('event registration successful', () => {
     const fn = jest.fn();
@@ -37,12 +37,12 @@ describe('pubSub', () => {
     expect(fn).toHaveBeenCalledWith('data');
   });
 
-  test('clean all listeners', () => {
+  test('clear all listeners', () => {
     const fn = jest.fn();
     const fn2 = jest.fn();
 
     pubSub.on('test', fn);
-    pubSub.clean();
+    pubSub.clear();
     expect(pubSub._listeners()).toEqual({});
   });
 });

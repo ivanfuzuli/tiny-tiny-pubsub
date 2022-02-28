@@ -9,7 +9,7 @@ It's a very tiny library for **publish/subscribe(pubsub)** operations. There's *
 
 ## Tests Coverage
 
-100% coverage.
+**100%** coverage.
 
 ## Usage
 
@@ -46,13 +46,13 @@ import pubsub from 'tiny-tiny-pubsub';
 pubsub.trigger('test', 'sample data');
 ```
 
-### Clean
+### Clear
 
-It cleans all event listeners.
+It clears all event listeners.
 
 ```javascript
 import pubsub from 'tiny-tiny-pubsub';
-pubsub.clean();
+pubsub.clear();
 ```
 
 ### Licence
