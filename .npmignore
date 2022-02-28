@@ -3,5 +3,8 @@ tsconfig.json
 tslint.json
 .prettierrc
 .jestconfig
-vscode
+.vscode
+.github
 test
+release.config.json
+jestconfig.json
