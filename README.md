@@ -2,6 +2,7 @@
 ![npm bundle size](https://img.shields.io/bundlephobia/min/tiny-tiny-pubsub)
 ![npm](https://img.shields.io/npm/v/tiny-tiny-pubsub)
 ![GitHub last commit](https://img.shields.io/github/last-commit/ivanfuzuli/tiny-tiny-pubsub)
+![GitHub](https://img.shields.io/github/license/ivanfuzuli/tiny-tiny-pubsub)
 
 ## What is the purpose?
 
