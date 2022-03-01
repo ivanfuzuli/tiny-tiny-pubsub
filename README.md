@@ -56,6 +56,46 @@ import pubsub from 'tiny-tiny-pubsub';
 pubsub.clear();
 ```
 
+### Wildcard support
+
+Pubsub be able to support **wildcard** text matching.
+
+For example:
+
+If there are event registrations as below and user calls it with `trigger` method.
+
+```javascript
+pubsub.on("john", () => console.log("john");
+pubsub.on("john.doe", () => console.log("john's name");
+pubsub.on("john.doe.mail", () => console.log("john's mail");
+pubsub.trigger("john.*")
+```
+
+all previously defined functions must be called except "john".
+
+```javascript
+// console output
+"john's name";
+"john's mail";
+```
+
+or user should be able to remove event listeners based on wildcards.
+
+```javascript
+pubsub.off('john.*');
+pubsub.trigger('john');
+pubsub.trigger('john.doe');
+pubsub.trigger('john.doe.mail');
+```
+
+```javascript
+// console output
+'john';
+```
+
+there must be only one listener in listeners array that is "john"
+Because user removed all listeners which matched with wildcard query that ends with asterix except "john".
+
 ### Licence
 
 MIT
